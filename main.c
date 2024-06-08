@@ -21,7 +21,7 @@ const char *datasDisponiveis[NUM_DATAS] = {
 HorariosEspecialidade horariosPorEspecialidade[NUM_ESPECIALIDADES];
 
 char usuario[50] = "agenda";
-char senha[50] = "1234";
+char senha[50] = "123";
 
 void inicializarHorariosDisponiveis() {
     for (int i = 0; i < NUM_ESPECIALIDADES; i++) {
@@ -42,14 +42,14 @@ void marcarHorarioOcupado(int especialidadeIndice, int horarioIndice) {
 void recuperarSenha() {
     char novaSenha[50];
 
-    printf("\n-~-~-~-~-Recuperação de Senha-~-~-~-~-~\n\n");
-    printf(" Insira a nova senha para o usuário '%s': ", usuario);
+    printf("\n-~-~-~-~-Recuperacaoo de Senha-~-~-~-~-~\n\n");
+    printf(" Insira a nova senha para o usuario: %s: ", usuario);
     scanf("%s", novaSenha);
 
     // Atualizar a senha
     strcpy(senha, novaSenha);
 
-    printf("\nSenha alterada com sucesso!\n");
+    printf("\n Senha alterada com sucesso!\n");
 }
 
 // Função para fazer login
@@ -65,26 +65,28 @@ bool fazerLogin() {
 
     while (1) {
         printf("\n-~-~-~-~-Sistema de Login-~-~-~-~-~\n\n");
-        printf("1. Fazer login\n");
-        printf("2. Esqueci minha senha\n\n");
-        printf("Escolha uma opção: ");
+        printf(" 1. Fazer login\n");
+        printf(" 2. Esqueci minha senha\n\n");
+        printf(" Escolha uma opcao: ");
         scanf("%d", &opcao);
         getchar();
 
         if (opcao == 1) {
-            printf("Usuário: ");
+            Sleep(1000);
+            system("cls");
+            printf("\n Usuario: ");
             scanf("%s", usuarioDigitado);
-            printf("Senha: ");
+            printf("\n Senha: ");
             scanf("%s", senhaDigitada);
 
             // Verificar se usuário e senha são válidos
             if (strcmp(usuarioDigitado, usuario) == 0 && strcmp(senhaDigitada, senha) == 0) {
-                printf("\nLogin bem-sucedido!\n");
+                printf("\n Login bem-sucedido!\n");
                 Sleep(2000);
                 system("cls");
                 return true; // Login bem-sucedido
             } else {
-                printf("\nErro: Nome de usuário ou senha inválidos. Tente novamente.\n");
+                printf("\n Erro: Nome de usuario ou senha invalidos! Tente novamente.\n");
                 Sleep(2000);
                 system("cls");
             }
@@ -93,7 +95,7 @@ bool fazerLogin() {
             Sleep(2000);
             system("cls");
         } else {
-            printf("Opção inválida. Tente novamente.\n");
+            printf(" Opcao invalida! Tente novamente.\n");
             Sleep(2000);
             system("cls");
         }
@@ -121,7 +123,7 @@ int main() {
         printf(" 4. Reagendar Consulta\n");
         printf(" 5. Cancelar Consulta\n");
         printf(" 6. Salvar e sair\n\n");
-        printf(" Escolha uma opção: ");
+        printf(" Escolha uma opcao: ");
         scanf("%d", &opcao);
         getchar();
 
@@ -151,7 +153,7 @@ int main() {
                 system("cls");
                 return 0;
             default:
-                printf(" Opção inválida!\n");
+                printf(" Opção invalida!\n");
                 Sleep(2000);
                 system("cls");
         }
@@ -160,7 +162,7 @@ int main() {
 
 void agendarConsulta() {
     if (totalConsultas >= NUM_CONSULTAS) {
-        printf("Limite de consultas atingido!\n");
+        printf(" Limite de consultas atingido!\n");
         return;
     }
 
@@ -170,7 +172,7 @@ void agendarConsulta() {
     printf("\n-~-~-~-~-Agendamento de Consultas-~-~-~-~-\n\n");
 
     while (1) {
-        printf("Nome do paciente: ");
+        printf(" Nome do paciente: ");
         fgets(novaConsulta.paciente.nome, 100, stdin);
         novaConsulta.paciente.nome[strcspn(novaConsulta.paciente.nome, "\n")] = 0; // Remove newline character
 
@@ -186,29 +188,29 @@ void agendarConsulta() {
         if (valido) {
             break;
         } else {
-            printf("Por favor, insira um nome válido (somente letras).\n");
+            printf(" Por favor, insira um nome valido! Use somente letras.\n");
         }
     }
 
     while (1) {
-        printf("\nIdade do paciente: ");
+        printf("\n Idade do paciente: ");
         if (scanf(" %d", &novaConsulta.paciente.idade) != 1 || novaConsulta.paciente.idade <= 0 || novaConsulta.paciente.idade > 100) {
-            printf("Por favor, insira uma idade válida.\n");
+            printf(" Por favor, insira uma idade valida!\n");
             while (getchar() != '\n'); // Clear input buffer
         } else {
             break;
         }
     }
 
-    printf("\nEspecialidades disponíveis:\n\n");
+    printf("\n Especialidades disponíveis:\n\n");
     for (int i = 0; i < NUM_ESPECIALIDADES; i++) {
-        printf("%d. %s\n", i + 1, especialidades[i]);
+        printf(" %d. %s\n", i + 1, especialidades[i]);
     }
     int escolha;
     while (1) {
-        printf("\nEscolha a especialidade: ");
+        printf("\n Escolha a especialidade: ");
         if (scanf(" %d", &escolha) != 1 || escolha < 1 || escolha > NUM_ESPECIALIDADES) {
-            printf("\nEscolha uma especialidade válida.\n");
+            printf("\n Escolha uma especialidade valida!\n");
             while (getchar() != '\n'); // Clear input buffer
         } else {
             break;
@@ -217,14 +219,14 @@ void agendarConsulta() {
     int especialidadeIndice = escolha - 1;
     strcpy(novaConsulta.especialidade, especialidades[especialidadeIndice]);
 
-    printf("\nDatas disponíveis:\n\n");
+    printf("\n Datas disponiveis:\n\n");
     for (int i = 0; i < NUM_DATAS; i++) {
-        printf("%d. %s\n", i + 1, datasDisponiveis[i]);
+        printf(" %d. %s\n", i + 1, datasDisponiveis[i]);
     }
     while (1) {
-        printf("\nEscolha a data: ");
+        printf("\n Escolha a data: ");
         if (scanf(" %d", &escolha) != 1 || escolha < 1 || escolha > NUM_DATAS) {
-            printf("\nEscolha uma data válida.\n");
+            printf("\n Escolha uma data valida.\n");
             while (getchar() != '\n'); // Clear input buffer
         } else {
             break;
@@ -232,16 +234,16 @@ void agendarConsulta() {
     }
     strcpy(novaConsulta.data, datasDisponiveis[escolha - 1]);
 
-    printf("\nHorários disponíveis para %s:\n\n", especialidades[especialidadeIndice]);
+    printf("\n Horarios disponiveis para %s:\n\n", especialidades[especialidadeIndice]);
     for (int i = 0; i < NUM_HORARIOS; i++) {
         if (horariosPorEspecialidade[especialidadeIndice].horariosDisponiveis[i]) {
-            printf("%d. %s\n", i + 1, horarios[i]);
+            printf(" %d. %s\n", i + 1, horarios[i]);
         }
     }
     while (1) {
-        printf("\nEscolha o horário: ");
+        printf("\n Escolha o horario: ");
         if (scanf(" %d", &escolha) != 1 || escolha < 1 || escolha > NUM_HORARIOS || !horariosPorEspecialidade[especialidadeIndice].horariosDisponiveis[escolha - 1]) {
-            printf("\nEscolha um horário válido.\n");
+            printf("\n Escolha um horario valido.\n");
             while (getchar() != '\n'); // Clear input buffer
         } else {
             break;
@@ -252,7 +254,7 @@ void agendarConsulta() {
     consultas[totalConsultas] = novaConsulta;
     totalConsultas++;
     marcarHorarioOcupado(especialidadeIndice, escolha - 1);
-    printf("\nConsulta agendada com sucesso!\n");
+    printf("\n Consulta agendada com sucesso!\n");
     Sleep(2000);
     system("cls");
 }
@@ -262,7 +264,7 @@ void listarConsultas() {
     printf("\n-~-~-~-~-Consultas Agendadas-~-~-~-~-\n\n");
 
     if (totalConsultas == 0) {
-        printf("Nenhuma consulta agendada.\n");
+        printf(" Nenhuma consulta agendada.\n");
     } else {
         for (int i = 0; i < totalConsultas; i++) {
             printf("%d. Nome: %s\n", i + 1, consultas[i].paciente.nome);
@@ -272,7 +274,7 @@ void listarConsultas() {
             printf("   Hora: %s\n\n", consultas[i].hora);
         }
     }
-    printf("Pressione Enter para continuar...");
+    printf(" Pressione Enter para continuar...");
     getchar();
     system("cls");
 }
@@ -282,7 +284,7 @@ void listarConsultasPorEspecialidade() {
     printf("\n-~-~-~-~-Consultas por Especialidade-~-~-~-~-\n\n");
 
     for (int i = 0; i < NUM_ESPECIALIDADES; i++) {
-        printf("Especialidade: %s\n", especialidades[i]);
+        printf(" Especialidade: %s\n", especialidades[i]);
         bool encontrou = false;
         for (int j = 0; j < totalConsultas; j++) {
             if (strcmp(consultas[j].especialidade, especialidades[i]) == 0) {
@@ -294,10 +296,10 @@ void listarConsultasPorEspecialidade() {
             }
         }
         if (!encontrou) {
-            printf("   Nenhuma consulta agendada.\n\n");
+            printf("    Nenhuma consulta agendada.\n\n");
         }
     }
-    printf("Pressione Enter para continuar...");
+    printf(" Pressione Enter para continuar...");
     getchar();
     system("cls");
 }
@@ -313,8 +315,8 @@ void cancelarConsultas() {
     printf("\n-~-~-~-~-Cancelar Consultas-~-~-~-~-\n\n");
 
     if (totalConsultas == 0) {
-        printf("Nenhuma consulta agendada.\n");
-        printf("Pressione Enter para continuar...");
+        printf(" Nenhuma consulta agendada.\n\n");
+        printf(" Pressione Enter para continuar...");
         getchar();
         system("cls");
         return;
@@ -323,12 +325,12 @@ void cancelarConsultas() {
     listarConsultas();
 
     int escolha;
-    printf("Escolha o número da consulta que deseja cancelar: ");
+    printf(" Escolha o numero da consulta que deseja cancelar: ");
     scanf("%d", &escolha);
     getchar();
 
     if (escolha < 1 || escolha > totalConsultas) {
-        printf("Consulta inválida!\n");
+        printf(" Consulta invalida!\n");
         return;
     }
 
@@ -355,7 +357,7 @@ void cancelarConsultas() {
         consultas[i] = consultas[i + 1];
     }
     totalConsultas--;
-    printf("Consulta cancelada com sucesso!\n");
+    printf(" Consulta cancelada com sucesso!\n");
     Sleep(2000);
     system("cls");
 }
@@ -365,8 +367,8 @@ void reagendarConsulta() {
     printf("\n-~-~-~-~-Reagendar Consultas-~-~-~-~-\n\n");
 
     if (totalConsultas == 0) {
-        printf("Nenhuma consulta agendada.\n");
-        printf("Pressione Enter para continuar...");
+        printf(" Nenhuma consulta agendada.\n\n");
+        printf(" Pressione Enter para continuar...");
         getchar();
         system("cls");
         return;
@@ -375,12 +377,12 @@ void reagendarConsulta() {
     listarConsultas();
 
     int escolha;
-    printf("Escolha o número da consulta que deseja reagendar: ");
+    printf(" Escolha o numero da consulta que deseja reagendar: ");
     scanf("%d", &escolha);
     getchar();
 
     if (escolha < 1 || escolha > totalConsultas) {
-        printf("Consulta inválida!\n");
+        printf(" Consulta invalida!\n");
         return;
     }
 
@@ -403,15 +405,15 @@ void reagendarConsulta() {
     }
 
     // Define nova data e horário
-    printf("\nDatas disponíveis:\n\n");
+    printf("\n Datas disponiveis:\n\n");
     for (int i = 0; i < NUM_DATAS; i++) {
         printf("%d. %s\n", i + 1, datasDisponiveis[i]);
     }
-    printf("\nEscolha a data: ");
+    printf("\n Escolha a data: ");
     scanf("%d", &escolha);
     getchar();
     if (escolha < 1 || escolha > NUM_DATAS) {
-        printf("\nData inválida!\n");
+        printf("\n Data invalida!\n");
         return;
     }
     strcpy(consultas[indice].data, datasDisponiveis[escolha - 1]);
@@ -424,32 +426,28 @@ void reagendarConsulta() {
         }
     }
 
-    printf("\nHorários disponíveis para %s:\n\n", especialidades[especialidadeIndice]);
+    printf("\n Horarios disponiveis para %s:\n\n", especialidades[especialidadeIndice]);
     for (int i = 0; i < NUM_HORARIOS; i++) {
         if (horariosPorEspecialidade[especialidadeIndice].horariosDisponiveis[i]) {
-            printf("%d. %s\n", i + 1, horarios[i]);
+            printf(" %d. %s\n", i + 1, horarios[i]);
         }
     }
-    printf("\nEscolha o horário: ");
+    printf("\n Escolha o horario: ");
     scanf("%d", &escolha);
     getchar();
     if (escolha < 1 || escolha > NUM_HORARIOS || !horariosPorEspecialidade[especialidadeIndice].horariosDisponiveis[escolha - 1]) {
-        printf("\nHorário inválido!\n");
+        printf("\n Horario invalido!\n");
         return;
     }
     strcpy(consultas[indice].hora, horarios[escolha - 1]);
     marcarHorarioOcupado(especialidadeIndice, escolha - 1);
-    printf("Consulta reagendada com sucesso!\n");
+    printf(" Consulta reagendada com sucesso!\n");
     Sleep(2000);
     system("cls");
 }
 
 void salvarConsultas() {
     FILE *arquivo = fopen("consultas.txt", "w");
-    if (arquivo == NULL) {
-        printf("Erro ao abrir o arquivo!\n");
-        return;
-    }
 
     for (int i = 0; i < totalConsultas; i++) {
         fprintf(arquivo, "%s,%d,%s,%s,%s\n", consultas[i].paciente.nome, consultas[i].paciente.idade,
@@ -461,10 +459,6 @@ void salvarConsultas() {
 
 void carregarConsultas() {
     FILE *arquivo = fopen("consultas.txt", "r");
-    if (arquivo == NULL) {
-        printf("Erro ao abrir o arquivo!\n");
-        return;
-    }
 
     while (fscanf(arquivo, "%[^,],%d,%[^,],%[^,],%[^\n]\n", consultas[totalConsultas].paciente.nome,
                   &consultas[totalConsultas].paciente.idade, consultas[totalConsultas].especialidade,
