@@ -269,7 +269,7 @@ Para profissionais de saúde que têm necessidade de agendar consultas de maneir
 
 O projeto de Agendamento de Consulta, ainda não esta finalizado mas, alcançou seus objetivos, fornecendo uma ferramenta prática e educativa para entender as funcionalidades básicas de um sistema de agendamento de consultas de um hospital. As operações simuladas incluem agendar consultas, listar consultas tanto todas sem separação como separadas por especialidades, reagendar consultas e cancelar consulta assim, proporcionando uma experiência interativa e realista.
 
-Ressaltamos que o projeto tem caráter didático e não substitui um sistema de Agendamento de Consulta real. Nada realizado no sistema afeta o mundo real é somente uma simulação.
+Ressalto que o projeto tem caráter didático e não substitui um sistema de Agendamento de Consulta real. Nada realizado no sistema afeta o mundo real é somente uma simulação.
 
 # Agradecimentos
 Obrigado por visitar meu repositório! Esperamos que você ache nosso projeto útil e interessante.
