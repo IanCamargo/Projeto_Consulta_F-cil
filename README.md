@@ -20,7 +20,7 @@
 
  - 👨‍💻 Ian Ribeiro Camargo
 
-# Índice 
+# &#128214; Índice 
 
 * [Visão do Produto](#Visão-do-Produto)
 * [Tecnologias Utilizadas](#Tecnologias-Utilizadas)
@@ -36,3 +36,5 @@
 * [Licença](#licença)
 * [Agradecimentos](#agradecimentos)
 
+# &#128161; Visão do Produto
+Para profissionais de saúde que têm necessidade de agendar consultas de maneira rápida e eficiente, o Consulta Fácil é um sistema de agendamento de consultas que oferece uma interface intuitiva e integração com diversas clínicas e hospitais. Diferentemente de outros sistemas de agendamento, o Consulta Fácil tem um processo de agendamento simplificado e disponibilidade 24/7.			
