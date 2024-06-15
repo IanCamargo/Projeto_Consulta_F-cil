@@ -61,38 +61,78 @@ Para profissionais de saúde que têm necessidade de agendar consultas de maneir
 # Fluxo de Eventos
 
 ## Fluxo Básico
-1-	O sistema solicita login e senha.
-2-	A secretária informa login e senha.
-3-	O sistema efetua o login.
-4-	O sistema abre o menu de opções.
-5-	A secretária seleciona a opção Agendar Consulta.
-6-	O sistema abre.
-7-	O sistema solicita Informações do Paciente e da Consulta.
-8-	A secretária informa Informações do Paciente e da Consulta.
-9-	O sistema retorna Consulta Cadastrada com Sucesso.
-10-	 O sistema volta para o menu principal.
-11-	 A secretária seleciona a opção Listar todas as Consultas.
-12-	 O sistema apresenta todas as consultas marcadas.
-13-	 A secretária confirma para retornar ao menu.
-14-	 O sistema volta para o menu principal.
-15-	 A secretária seleciona a opção Listar consultas por especialidade.
-16-	 O sistema solicita a especialidade.
-17-	 A secretária seleciona a especialidade.
-18-	 O sistema retorna o todas as consultas daquela especialidade.
-19-	 A secretária confirma para retornar ao menu.
-20-	 O sistema volta para o menu principal.
-21-	 A secretária seleciona a opção Reagendar Consulta.
-22-	 O sistema retorna todas as consultas.
-23-	 A secretaria seleciona a consulta.
-24-	 O sistema solicita a data e horário.
-25-	 A secretaria informa a data e horário.
-26-	 O sistema retorna que a Consulta foi reagendada com sucesso.
-27-	 O sistema volta para o menu principal.
-28-	 A secretária seleciona a opção Cancelar Consulta.
-29-	 O sistema retorna todas as consultas.
-30-	 A secretaria seleciona a consulta.
-31-	 O sistema retorna que a Consulta foi excluída com sucesso.
-32-	 O sistema volta para o menu principal.
-33-	 A secretaria seleciona Salvar e Sair.
-34-	 O sistema sai.
 
+1-	O sistema abre o menu de opções. <br />
+2-	O sistema apresenta a opção 1: “Fazer Login” e opção 2: “Esqueci Minha Senha”. <br />
+3-	Secretária seleciona a opção 2. <br />
+4-	Sistema solicita o usuário. <br />
+5-	Secretária informa o usuário. <br />
+6-	Sistema mostra a senha. <br />
+7-	Sistema retorna ao menu de opções. <br />
+8-	Secretária seleciona a opção 1. <br />
+9-	 O sistema solicita login e senha. <br />
+10-	 A secretária informa login e senha. <br />
+11-	 O sistema efetua o login. <br />
+12-	 O sistema abre o menu de opções. <br />
+13-	 A secretária seleciona a opção Agendar Consulta. <br />
+14-	 O sistema solicita Informações do Paciente e da Consulta. <br />
+15-	 A secretária informa Informações do Paciente e da Consulta. <br />
+16-	 O sistema retorna Consulta Cadastrada com Sucesso. <br />
+17-	 O sistema volta para o menu principal. <br />
+18-	 A secretária seleciona a opção Listar todas as Consultas. <br />
+19-	 O sistema apresenta todas as consultas marcadas. <br />
+20-	 A secretária confirma para retornar ao menu. <br />
+21-	 O sistema volta para o menu principal. <br />
+22-	 A secretária seleciona a opção Listar consultas por especialidade. <br />
+23-	 O sistema retorna o todas as consultas das especialidades. <br />
+24-	 A secretária confirma para retornar ao menu. <br />
+25-	 O sistema volta para o menu principal. <br />
+26-	 A secretária seleciona a opção Reagendar Consulta. <br />
+27-	 O sistema retorna todas as consultas. <br />
+28-	 A secretária confirma para continuar o programa. <br />
+29-	 A secretaria seleciona a consulta. <br />
+30-	 O sistema solicita a data e horário. <br />
+31-	 A secretaria informa a data e horário. <br />
+32-	 O sistema retorna que a Consulta foi reagendada com sucesso. <br />
+33-	 O sistema volta para o menu principal. <br />
+34-	 A secretária seleciona a opção Cancelar Consulta. <br />
+35-	 O sistema retorna todas as consultas. <br />
+36-	 A secretária confirma para continuar o programa. <br />
+37-	 A secretaria seleciona a consulta. <br />
+38-	 O sistema retorna que a Consulta foi excluída com sucesso. <br />
+39-	 O sistema volta para o menu principal. <br />
+40-	 A secretaria seleciona Salvar e Sair. <br />
+41-	 O sistema apresenta que está fechando. <br />
+42-	 O sistema fecha. <br />
+
+## Fluxo Alternativo
+
+5.	A secretária informa o usuário incorreto e o sistema retorna mensagem de erro. <br />
+10.  A secretária informa o login incorreto e o sistema retorna mensagem de erro. <br />
+15.  A secretária informa alguma informação errada o sistema retorna mensagem de erro. <br />
+20.  A secretária não confirma com a tecla Enter o sistema não retorna para o menu principal. <br />
+24.  A secretária não confirma com a tecla Enter o sistema não retorna para o menu principal. <br />
+29.  A secretária informa alguma informação errada o sistema retorna mensagem de erro. <br />
+31.  A secretária informa alguma informação errada o sistema retorna mensagem de erro. <br />
+37.  A secretária informa alguma informação errada o sistema retorna mensagem de erro. <br />
+
+# Diagrama de Atividades
+
+![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/5c0945ab-21f4-4c2f-a8f4-c1525adab342)
+
+# Guia do Usuário
+
+
+
+
+
+
+
+
+
+
+# Conclusão
+
+# Licença
+
+# Agradecimentos
