@@ -33,7 +33,6 @@
 * [Diagrama de Atividades](#Diagrama-de-Atividades)
 * [Guia do Usuário](#Guia-do-Usuário)
 * [Conclusão](#conclusão)
-* [Licença](#licença)
 * [Agradecimentos](#agradecimentos)
 
 # &#128161; Visão do Produto
@@ -234,22 +233,41 @@ Para profissionais de saúde que têm necessidade de agendar consultas de maneir
 
     ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/d9788cc6-8312-4385-8e94-0da8b6fc7996)
 
+18. Cancelar Consulta:
 
+    Selecione a opção 5 no Menu Principal, "Cancelar COnsulta".
 
+    ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/3ad9afe2-45a7-489f-8c0c-08e6bb43cc49)
 
+    Uma aba será aberta mostrando todas as consultas agendadas.
 
+    ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/2a38b0d4-0247-478f-8047-eef7264454bb)
 
-   
+    Escolha a consulta que deseja cancelar.
 
-   
+    ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/34ce49ba-366c-48bd-b1a2-44300db1359c)
 
-   
+19. Erro Opção Consulta:
 
+    Informe uma opção de consulta válida para evitar erros.
 
+    ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/a472173a-3047-4e67-9755-d3df07afbbc8)
 
+20. Salvar e Sair:
+
+    Selecione a opção 0, "Salvar e Sair".
+    
+    ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/2ebf0e9a-c256-4020-ada9-07442390c59b)
+
+    O programa Salva Todas as informações e Fecha.
+
+    ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/22c6893a-109f-45ba-b88f-b1f1f31e4b2b)
 
 # Conclusão
 
-# Licença
+O projeto de Agendamento de Consulta, ainda não esta finalizado mas, alcançou seus objetivos, fornecendo uma ferramenta prática e educativa para entender as funcionalidades básicas de um sistema de agendamento de consultas de um hospital. As operações simuladas incluem agendar consultas, listar consultas tanto todas sem separação como separadas por especialidades, reagendar consultas e cancelar consulta assim, proporcionando uma experiência interativa e realista.
+
+Ressaltamos que o projeto tem caráter didático e não substitui um sistema de Agendamento de Consulta real. Nada realizado no sistema afeta o mundo real é somente uma simulação.
 
 # Agradecimentos
+Obrigado por visitar meu repositório! Esperamos que você ache nosso projeto útil e interessante.
