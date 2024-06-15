@@ -122,11 +122,128 @@ Para profissionais de saúde que têm necessidade de agendar consultas de maneir
 
 # Guia do Usuário
 
+1. Bem Vindo:
+
+   Aguarde para ser direcionado ao Menu de Login.
+   
+   ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/af36c68e-6dbb-4d60-bcdb-f3ae90c8c593)
+
+2. Menu de Login:
+
+   Selecione a opção 1 no Menu de Login, "Fazer Login".
+
+   ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/cb8c565e-d4b8-4777-ae45-4cc4ed9fa0de)
+
+3. Fazendo Login:
+
+   Preencha com o seguinte acesso:
+
+   Usuário: consulta
+   Senha: 123
+
+   ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/a07dc2b3-af57-4104-a52d-4eb3dff4440d)
+
+4. Erro no Login:
+
+   Informe o Usuário e Senha corretamente para evitar erros.
+
+   ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/9fcf2381-709f-4422-a0aa-05868a59fb68)
+
+
+5. Agendar Consulta:
+
+   Selecione a opção 1 no Menu Principal, "Agendar Consulta".
+   Informe as informações corretamente.
+
+   ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/0d46d7f2-e697-43b2-99d4-b48d74341e7e)
+   ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/643e58e3-0969-4bfd-8679-b149e1d78a29)
+
+7. Erro no Nome:
+
+   Informe o nome corretamente sem números ou caracteres especiais para evitar erros.
+
+   ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/65fed879-0311-46fb-8a82-36f7abb47e5f)
+
+8. Erro na Idade:
+
+   Informe uma idade válida somente número e entre 0 a 100 para evitar erros.
+
+   ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/e18f7fe8-a539-41ed-9d01-70857ead87a6)
+
+9. Erro Opção Especialidade:
+
+   Informe uma opção de especialidade válido para evitar erros.
+
+   ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/8bf636f5-73ab-473a-a51a-5c02e744c4d0)
+
+10. Erro Opção Data:
+
+   Informe uma opção de data válido para evitar erros.
+
+   ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/7edfc1db-d172-4a49-97f8-cced850c71a1)
+
+11. Erro Opção Horário:
+
+    Informe uma opção de horário válido para evitar erros.
+
+    ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/d9788cc6-8312-4385-8e94-0da8b6fc7996)
+
+12. Listar Todas as Consultas:
+
+    Selecione a opção 2 no Menu Principal, "Listar Todas as Consultas".
+
+    ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/327d9179-e9da-4de8-b00c-bd1580ac3c4f)
+    
+    Uma aba será aberta mostrando todas as consultas agendadas.
+    
+    ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/256523b5-8228-40fb-8d9b-5b63eabe97e8)
+
+14. Listar Consultas por Especialidade:
+
+    Selecione a opção 3 no Menu Principal, "Listar Consultas por Especialidade".
+    
+    ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/46a2cec5-9bca-4159-8468-b48f9eeaed61)
+
+    Uma aba será aberta mostrando todas as consultas agendadas separadas por especialidades.
+
+    ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/606fe675-db4e-4660-b09a-a547a6691b00)
+
+15. Reagendar Consulta
+
+    Selecione a opção 4 no Menu Principal, "Reagendar Consulta".
+    
+    ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/786fec98-79d2-4fe2-93ef-e89f705abe65)
+
+    Uma aba será aberta mostrando todas as consultas agendadas e escolha qual consulta você quer reagendar.
+
+    ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/a985c7e2-46d7-4743-8889-5c1fe8f8de28)
+
+    Informe as informações corretamente.
+
+    ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/6d88f92f-b2c2-456a-8078-ee8a05e2d808)
+
+16. Erro Opção Data:
+
+    Informe uma opção de data válido para evitar erros.
+
+    ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/7edfc1db-d172-4a49-97f8-cced850c71a1)
+
+17. Erro Opção Horário:
+
+    Informe uma opção de horário válido para evitar erros.
+
+    ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/d9788cc6-8312-4385-8e94-0da8b6fc7996)
 
 
 
 
 
+
+   
+
+   
+
+   
 
 
 
