@@ -55,7 +55,7 @@ Para profissionais de saúde que têm necessidade de agendar consultas de maneir
 ![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/84c05449-b604-445f-a637-3572349edb88)
 
 # Diagrama de Casos de Uso
-![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/3ed78713-f0c3-4c8a-8b2d-926e8cb8245a)
+![image](https://github.com/IanCamargo/Projeto_Consulta_Facil/assets/144857524/674858f4-e19b-429c-83e5-c192ac43df2f)
 
 # Fluxo de Eventos
 
