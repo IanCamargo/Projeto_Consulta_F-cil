@@ -18,7 +18,7 @@
 
 **Autor:**
 
-👨‍💻 Ian Ribeiro Camargo
+ - 👨‍💻 Ian Ribeiro Camargo
 
 # Índice 
 
