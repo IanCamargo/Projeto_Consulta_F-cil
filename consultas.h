@@ -40,12 +40,61 @@ typedef struct {
 
 extern HorariosEspecialidade horariosPorEspecialidade[NUM_ESPECIALIDADES];
 
+/**
+ * @brief Agenda uma nova consulta.
+ *
+ * Esta função agenda uma nova consulta solicitando ao usuário informações
+ * como nome, idade, especialidade, data e horário. Verifica também a validade
+ * dos dados fornecidos.
+ */
 void agendarConsulta();
+
+/**
+ * @brief Lista todas as consultas agendadas.
+ *
+ * Esta função imprime na tela todas as consultas que foram agendadas,
+ * exibindo informações como nome do paciente, idade, especialidade, data e horário.
+ */
 void listarConsultas();
+
+/**
+ * @brief Lista todas as consultas por especialidade.
+ *
+ * Esta função exibe todas as consultas agendadas agrupadas por especialidade,
+ * permitindo visualizar as consultas de cada especialidade separadamente.
+ */
 void salvarConsultas();
+
+/**
+ * @brief Carrega as consultas de um arquivo.
+ *
+ * Esta função carrega as consultas de um arquivo de texto, permitindo que as informações
+ * salvas sejam recuperadas quando o programa é iniciado.
+ */
 void carregarConsultas();
+
+/**
+ * @brief Lista todas as consultas por especialidade.
+ *
+ * Esta função exibe todas as consultas agendadas agrupadas por especialidade,
+ * permitindo visualizar as consultas de cada especialidade separadamente.
+ */
 void listarConsultasPorEspecialidade();
+
+/**
+ * @brief Cancela uma consulta agendada.
+ *
+ * Esta função permite ao usuário cancelar uma consulta agendada. O usuário
+ * deve selecionar qual consulta deseja cancelar a partir da lista de consultas.
+ */
 void cancelarConsultas();
+
+/**
+ * @brief Salva as consultas em um arquivo.
+ *
+ * Esta função salva todas as consultas agendadas em um arquivo de texto, permitindo
+ * que as informações sejam persistidas entre execuções do programa.
+ */
 void reagendarConsulta();
 
 extern Consulta consultas[NUM_CONSULTAS];
